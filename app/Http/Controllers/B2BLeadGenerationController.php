@@ -9,12 +9,12 @@ use Mail;
 class B2BLeadGenerationController extends Controller
 {
     // Create Contact Form
-    public function createForm(Request $request) {
+    public function b2bForm(Request $request) {
         return view('B2BLeadGeneration.form');
       }
 
       // Store Contact Form data
-      public function ContactUsForm(Request $request) {
+      public function submitb2bForm(Request $request) {
           // Form validation
           $this->validate($request, [
               'First_Name' => 'required',

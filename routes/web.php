@@ -21,5 +21,5 @@ Route::get('/f', function () {
     return view('B2BLeadGeneration.form2');
 });
 
-Route::get('/', [B2BLeadGenerationController::class, 'createForm']);
-Route::post('/', [B2BLeadGenerationController::class, 'ContactUsForm'])->name('contact.store');
+Route::get('/', [B2BLeadGenerationController::class, 'b2bForm']);
+Route::post('/', [B2BLeadGenerationController::class, 'submitb2bForm'])->name('contact.store');

@@ -36,3 +36,6 @@ label {
     position: absolute;
     left: 50%;
 }
+span {
+    width:30%;
+}
